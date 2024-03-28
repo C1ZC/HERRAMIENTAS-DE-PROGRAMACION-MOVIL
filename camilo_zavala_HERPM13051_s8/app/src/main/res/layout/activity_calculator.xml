@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- UI elements for decimal input -->
+    <EditText
+        android:id="@+id/etDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Decimal Input"
+        android:inputType="number" />
+
+    <!-- UI elements for binary input -->
+    <EditText
+        android:id="@+id/etBinary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDecimal"
+        android:layout_marginTop="16dp"
+        android:hint="Binary Input"
+        android:inputType="number" />
+
+    <!-- UI elements for decimal result -->
+    <EditText
+        android:id="@+id/etDecimalResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etBinary"
+        android:layout_marginTop="16dp"
+        android:hint="Decimal Result"
+        android:inputType="number"
+        android:enabled="false" />
+
+    <!-- UI elements for binary result -->
+    <EditText
+        android:id="@+id/etBinaryResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDecimalResult"
+        android:layout_marginTop="16dp"
+        android:hint="Binary Result"
+        android:inputType="number"
+        android:enabled="false" />
+
+    <!-- UI elements for second decimal input -->
+    <EditText
+        android:id="@+id/etDecimal2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etBinaryResult"
+        android:layout_marginTop="16dp"
+        android:hint="Second Decimal Input"
+        android:inputType="number" />
+
+    <!-- UI elements for second binary input -->
+    <EditText
+        android:id="@+id/etBinary2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDecimal2"
+        android:layout_marginTop="16dp"
+        android:hint="Second Binary Input"
+        android:inputType="number" />
+
+    <!-- Buttons for operations -->
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etBinary2"
+        android:layout_marginTop="16dp"
+        android:text="Convert" />
+
+    <Button
+        android:id="@+id/btnSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnConvert"
+        android:layout_marginTop="16dp"
+        android:text="Sum" />
+
+    <Button
+        android:id="@+id/btnSubtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSum"
+        android:layout_marginTop="16dp"
+        android:text="Subtract" />
+
+</RelativeLayout>
