@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abcstudios.camilo_zavala_herpm13051_s7">
+
+    <!-- Permisos -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".App"
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"> <!-- Tema de la aplicación -->
+
+    <!-- Actividades de la Aplicación -->
+    <activity android:name=".MainActivity">
+        <!-- Esta actividad podría ser el punto de entrada si decides cambiar el flujo -->
+    </activity>
+
+    <activity android:name=".LoginActivity">
+        <!-- Actividad de inicio de sesión -->
+    </activity>
+
+    <activity android:name=".HolidayActivity">
+        <!-- Actividad para mostrar los días feriados -->
+    </activity>
+
+    <activity
+        android:name=".SplashActivity"
+        android:exported="true"> <!-- Define esta actividad como el punto de entrada a la aplicación -->
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent-filter>
+    </activity>
+</application>
+
+    </manifest>
